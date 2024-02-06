@@ -162,18 +162,55 @@ class home extends StatelessWidget {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-                Row(
-                  children: [
-                    SizedBox(width: 10),
-                    CircleAvatar(backgroundImage: AssetImage("assets/images/pizza.jpg"),radius: 30,),//1
-                    CircleAvatar(backgroundImage: AssetImage("assets/images/Frenchfries.jpg"),radius: 30,),//2
-                    CircleAvatar(backgroundImage: AssetImage("assets/images/drink.jpg"),radius: 30,),//3
-                    CircleAvatar(backgroundImage: AssetImage("assets/images/chicken.jpg"),radius: 30,),//4
-                    CircleAvatar(backgroundImage: AssetImage("assets/images/hamberger.jpg"),radius: 30,),//5
-                    CircleAvatar(backgroundImage: AssetImage("assets/images/moo.jpg"),radius: 30,),//6
-                
-                  ],
-                ),
+                SingleChildScrollView(
+  scrollDirection: Axis.horizontal, 
+  child: Row(
+    children: [
+      SizedBox(width: 10),
+      CircleAvatar(backgroundImage: AssetImage("assets/images/pizza.jpg"), radius: 30,),//1
+      CircleAvatar(backgroundImage: AssetImage("assets/images/Frenchfries.jpg"), radius: 30,),//2
+      CircleAvatar(backgroundImage: AssetImage("assets/images/drink.jpg"), radius: 30,),//3
+      CircleAvatar(backgroundImage: AssetImage("assets/images/chicken.jpg"), radius: 30,),//4
+      CircleAvatar(backgroundImage: AssetImage("assets/images/hamberger.jpg"), radius: 30,),//5
+      CircleAvatar(backgroundImage: AssetImage("assets/images/tacos.jpg"), radius: 30,),//6
+      CircleAvatar(backgroundImage: AssetImage("assets/images/moo.jpg"), radius: 30,),//6
+    ],
+  ),
+),
+                Container(
+  width: 350, // กำหนดความกว้าง
+  height: 40, // กำหนดความสูง
+  margin: EdgeInsets.all(10), // กำหนดขอบของ Container
+  padding: EdgeInsets.all(10), // กำหนดระยะห่างภายใน Container
+  decoration: BoxDecoration(
+    color: const Color.fromARGB(255, 172, 135, 114), // กำหนดสีพื้นหลัง
+    borderRadius: BorderRadius.only(
+      topLeft: Radius.circular(20),
+      topRight: Radius.circular(10), 
+    ),
+    boxShadow: [
+      BoxShadow(
+        color: Colors.grey.withOpacity(0.5),
+        spreadRadius: 5,
+        blurRadius: 7,
+        offset: Offset(3, 3),
+      ),
+    ],
+  ),
+  child: Row(
+    children: [
+      Icon(Icons.sell, color: Colors.white), // ไอคอน
+      SizedBox(width: 10), // ระยะห่างระหว่างไอคอนและข้อความ
+      Text(
+        'You have 12 valid coupons',
+        style: TextStyle(
+          color: Colors.white, // กำหนดสีข้อความ
+          fontSize: 18, // กำหนดขนาดตัวอักษร
+        ),
+      ), // เพิ่มเนื้อหาภายใน Container
+    ],
+  ),
+),
                     // Container แรก
                     Row(
                       children: [
@@ -357,33 +394,15 @@ class home extends StatelessWidget {
                               ),
                       ],
                     ),
-                    Container(
-  width: 350, // กำหนดความกว้าง
-  height: 40, // กำหนดความสูง
-  color: const Color.fromARGB(255, 172, 135, 114), // กำหนดสีพื้นหลัง
-  margin: EdgeInsets.all(10), // กำหนดขอบของ Container
-  padding: EdgeInsets.all(10), // กำหนดระยะห่างภายใน Container
-  child: Row(
-    children: [
-      Icon(Icons.sell, color: Colors.white), // ไอคอน
-      SizedBox(width: 10), // ระยะห่างระหว่างไอคอนและข้อความ
-      Text(
-        'You have 12 valid coupons',
-        style: TextStyle(
-          color: Colors.white, // กำหนดสีข้อความ
-          fontSize: 18, // กำหนดขนาดตัวอักษร
-        ),
-      ), // เพิ่มเนื้อหาภายใน Container
-    ],
-  ),
-),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-}
+                   
+
+                            ],
+                          ),
+                        ],
+                      ),
+                    );
+                  }
+                }
       
 class search extends StatelessWidget {
   const search({super.key});
