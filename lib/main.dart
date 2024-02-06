@@ -51,7 +51,7 @@ class _MyAppState extends State<MyApp> {
     Padding(
       padding: const EdgeInsets.only(right: 20.0),
       child: CircleAvatar(
-  backgroundColor: Color.fromARGB(255, 150, 197, 162),
+  backgroundColor: Color.fromARGB(255, 89, 116, 90),
   radius: 20, // ขนาดของวงกลม
   child: Icon(
     Icons.location_on,
@@ -81,14 +81,14 @@ class _MyAppState extends State<MyApp> {
           color: Colors.white,
           ),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
-          backgroundColor: const Color.fromARGB(255, 230, 195, 195),
+          backgroundColor: Color.fromARGB(255, 172, 135, 114),
           ),
           floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       //------ bottomNavigationBar ------
       bottomNavigationBar: Container(
         height: 60,
         decoration: BoxDecoration(
-          color: Color.fromARGB(255, 150, 197, 162),
+          color: Color.fromARGB(255, 89, 116, 90),
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(50),
             topRight: Radius.circular(50),
@@ -156,7 +156,7 @@ class home extends StatelessWidget {
       Column(
         children: [
           Text(
-        "\n Food type",
+        " Food type",
         style: TextStyle(color: const Color.fromARGB(255, 3, 3, 3), fontWeight: FontWeight.bold,fontSize: 30),
         ),SizedBox(width: 50),
           Column(
@@ -178,7 +178,7 @@ class home extends StatelessWidget {
                     Row(
                       children: [
                         Container(
-                                margin: EdgeInsets.all(40),
+                                margin: EdgeInsets.all(30),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20),
                                   boxShadow: [
@@ -198,8 +198,8 @@ class home extends StatelessWidget {
                                       Image.asset(
                                         "assets/images/kaijew.jpg",
                                         fit: BoxFit.cover,
-                                        width: 110,
-                                        height: 110,
+                                        width: 150,
+                                        height: 150,
                                       ),
                                       // ข้อความ
                                       Positioned(
@@ -222,7 +222,7 @@ class home extends StatelessWidget {
                               ),
                         // Container ที่สอง
                                           Container(
-                                margin: EdgeInsets.all(40),
+                                margin: EdgeInsets.all(10),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20),
                                   boxShadow: [
@@ -242,8 +242,8 @@ class home extends StatelessWidget {
                                       Image.asset(
                                         "assets/images/kawpad.jpg",
                                         fit: BoxFit.cover,
-                                        width: 110,
-                                        height: 110,
+                                        width: 150,
+                                        height: 150,
                                       ),
                                       // ข้อความ
                                       Positioned(
@@ -269,7 +269,7 @@ class home extends StatelessWidget {
                     Row(
                       children: [
                         Container(
-                                margin: EdgeInsets.all(40),
+                                margin: EdgeInsets.all(30),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20),
                                   boxShadow: [
@@ -289,8 +289,8 @@ class home extends StatelessWidget {
                                       Image.asset(
                                         "assets/images/suki.jpg",
                                         fit: BoxFit.cover,
-                                        width: 110,
-                                        height: 110,
+                                        width: 150,
+                                        height: 150,
                                       ),
                                       // ข้อความ
                                       Positioned(
@@ -313,7 +313,7 @@ class home extends StatelessWidget {
                               ),
                         // Container ที่สอง
                                           Container(
-                                margin: EdgeInsets.all(40),
+                                margin: EdgeInsets.all(10),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20),
                                   boxShadow: [
@@ -333,8 +333,8 @@ class home extends StatelessWidget {
                                       Image.asset(
                                         "assets/images/kawpalka.jpg",
                                         fit: BoxFit.cover,
-                                        width: 110,
-                                        height: 110,
+                                        width: 150,
+                                        height: 150,
                                       ),
                                       // ข้อความ
                                       Positioned(
@@ -360,7 +360,7 @@ class home extends StatelessWidget {
                     Container(
   width: 350, // กำหนดความกว้าง
   height: 40, // กำหนดความสูง
-  color: const Color.fromARGB(255, 230, 195, 195), // กำหนดสีพื้นหลัง
+  color: const Color.fromARGB(255, 172, 135, 114), // กำหนดสีพื้นหลัง
   margin: EdgeInsets.all(10), // กำหนดขอบของ Container
   padding: EdgeInsets.all(10), // กำหนดระยะห่างภายใน Container
   child: Row(
